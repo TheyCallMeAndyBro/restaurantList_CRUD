@@ -14,7 +14,7 @@ This website is built with Node.js, Express.js, and MySQL. I've leveraged Sequel
 
 1.Clone the repository
 ```
-git clone https://github.com/TheyCallMeAndyBro/restaurantList.git
+git clone https://github.com/TheyCallMeAndyBro/restaurantList_CRUD.git
 ```
 
 2.Move to file
