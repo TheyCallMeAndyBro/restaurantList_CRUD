@@ -43,16 +43,15 @@
             </span>
           </div>
           <div class="card-footer d-flex justify-content-end">
-            <form action="/restaurants/{{restaurant.id}}/edit" method="get" >
-            <button class="btn btn-primary">Edit</button>
+            <form action="/restaurants/{{restaurant.id}}/edit" method="get">
+              <button class="btn btn-primary">Edit</button>
             </form>
 
-            <form action="restaurants/{{restaurant.id}}" method="get"class="mx-1" >
-            <button class="btn btn-primary">Detail</button>
+            <form action="restaurants/{{restaurant.id}}" method="get" class="mx-1">
+              <button class="btn btn-primary">Detail</button>
             </form>
-
-            <form action="/restaurants/{{restaurant.id}}?_method=delete" method="post" >
-            <button class="btn btn-danger">Delete</button>
+            <form action="/restaurants/{{restaurant.id}}?_method=delete" method="post">
+              <button class="btn btn-danger">Delete</button>
             </form>
           </div>
         </div>
