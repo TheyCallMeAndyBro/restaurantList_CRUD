@@ -2,7 +2,7 @@
 
 This website is built with Node.js, Express.js, and MySQL. I've leveraged Sequelize, a Node.js ORM (Object Relational Mapping) tool, to interact with the database. Users can  manage restaurants through  buttons for creation, deletion, reading, and updating. I trust you'll have delightful user experience.  
 
-![restaurantListDemo](<Recording 2023-09-27 at 12.26.10.gif>)
+![Demo][(https://github.com/TheyCallMeAndyBro/restaurantList_CRUD/blob/main/restaurantList_CRUD_Demo.gif)]
 
 ## Features
 
