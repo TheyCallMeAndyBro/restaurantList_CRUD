@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+      restaurantList.belongsTo(models.Users) //預設會把fk設置為Users加上Id
     }
   }
   restaurantList.init({
@@ -22,10 +22,14 @@ module.exports = (sequelize, DataTypes) => {
     phone: DataTypes.STRING,
     google_map: DataTypes.STRING,
     rating: DataTypes.STRING,
-    description: DataTypes.STRING
+    description: DataTypes.STRING,
+    usersId:{
+      type:DataTypes.INTEGER,
+      allowNull: false
+    }
   }, {
     sequelize,
-    modelName: 'restaurantList',
+    modelName: 'restaurantLists',
   });
   return restaurantList;
 };
