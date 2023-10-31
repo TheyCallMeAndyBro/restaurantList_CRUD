@@ -26,8 +26,7 @@
           </label>
         </div>
         <div class="col-9 my-3">
-          <input type="text" name="name" placeholder="please input name" class="form-control form-control-lg"
-            required>
+          <input type="text" name="name" placeholder="please input name" class="form-control form-control-lg" required>
         </div>
 
         <!-- Email -->
@@ -58,14 +57,22 @@
           </label>
         </div>
         <div class="col-9 my-3">
-          <input type="text" name="confirm_passowrd" placeholder="please input confirm_password" class="form-control form-control-lg"
-            required>
+          <input type="text" name="confirm_passowrd" placeholder="please input confirm_password"
+            class="form-control form-control-lg" required>
         </div>
-
-        <div class="card-footer text-center">
-          <button class="btn btn-lg btn-primary">Register</button>
+        <div class="text-center mt-3">
+          <button class="btn btn-lg btn-primary" style="width: 300px;">Register</button>
         </div>
     </form>
+
+    <div class="text-center mt-3">
+      <form action="/oauth2_fb/login/facebook" method="GET">
+        <button  class="btn btn-lg btn-primary" style="width: 300px;">
+          <i class="fab fa-facebook-f"></i> Facebook登入
+        </button>
+      </form>
+    </div>
+
   </div>
 
 </header>

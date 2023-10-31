@@ -2,18 +2,17 @@ const express = require('express')
 const { engine } = require('express-handlebars')
 const app = express()
 const port = 3000
-const flash = require('connect-flash')
-const session = require('express-session')
-const passport = require('passport')
-const router = require('./routes')
-const messageHandler = require('./middlewares/mseeage-handler')
-const errorHandler = require('./middlewares/error-handler')
-
-
 
 if (process.env.NODE_ENV === 'development') {
   require('dotenv').config()
 }
+const flash = require('connect-flash')
+const session = require('express-session')
+const passport = require('./config/passport')
+const router = require('./routes')
+const messageHandler = require('./middlewares/mseeage-handler')
+const errorHandler = require('./middlewares/error-handler')
+
 
 const methodOverride = require('method-override')
 const { where } = require('sequelize')

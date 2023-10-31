@@ -39,10 +39,18 @@
             class="form-control form-control-lg" required>
         </div>
 
-        <div class="card-footer text-center">
-          <button class="btn btn-lg btn-primary">login</button>
+        <div class="text-center mt-3">
+          <button class="btn btn-lg btn-primary" style="width: 300px;">login</button>
         </div>
     </form>
+        <div class="text-center mt-3">
+          <form action="/oauth2_fb/login/facebook" method="GET">
+            <button  class="btn btn-lg btn-primary" style="width: 300px;">
+              <i class="fab fa-facebook-f"></i> Facebook登入
+            </button>
+          </form>
+        </div>
+
   </div>
   
 </header>
